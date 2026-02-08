@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "data": {
+    "scenes": [
+      {
+        "name": "日常",
+        "categories": [
+          {
+            "name": "あいさつ",
+            "items": [
+              {"text": "こんにちは"}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

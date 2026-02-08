@@ -1,0 +1,9 @@
+<UserControl x:Class="SelectAid.Views.OverlayPanelView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <StackPanel Margin="24">
+        <Button Content="Overlay Toggle" Style="{StaticResource PrimaryButton}" Margin="6" Height="80" Click="OnOverlay" />
+        <Button Content="Mouse Grid" Style="{StaticResource PrimaryButton}" Margin="6" Height="80" Click="OnGrid" />
+        <Button Content="Home" Style="{StaticResource PrimaryButton}" Margin="6" Height="80" Click="OnHome" />
+    </StackPanel>
+</UserControl>

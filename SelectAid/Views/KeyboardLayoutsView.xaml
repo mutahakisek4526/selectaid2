@@ -1,0 +1,16 @@
+<UserControl x:Class="SelectAid.Views.KeyboardLayoutsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Margin="16">
+        <ListBox ItemsSource="{Binding Layouts}" DisplayMemberPath="Name" FontSize="28">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Margin="6">
+                        <TextBlock Text="{Binding Name}" Width="300" VerticalAlignment="Center" FontSize="28" />
+                        <Button Content="Toggle" Style="{StaticResource SecondaryButton}" Margin="12,0,0,0" Click="OnToggle" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</UserControl>

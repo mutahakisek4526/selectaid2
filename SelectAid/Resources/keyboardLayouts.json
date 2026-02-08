@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "data": [
+    {
+      "id": "kana",
+      "name": "標準50音",
+      "columns": 6,
+      "enabled": true,
+      "keys": [
+        {"label": "あ", "outputText": "あ", "action": "Char", "variant": ""},
+        {"label": "い", "outputText": "い", "action": "Char", "variant": ""}
+      ]
+    }
+  ]
+}
