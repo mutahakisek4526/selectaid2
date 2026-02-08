@@ -1,0 +1,14 @@
+{
+  "layouts": [
+    {
+      "id": "kana",
+      "name": "標準50音",
+      "columns": 6,
+      "enabled": true,
+      "keys": [
+        {"label": "あ", "value": "あ", "kind": "Char"},
+        {"label": "い", "value": "い", "kind": "Char"}
+      ]
+    }
+  ]
+}
