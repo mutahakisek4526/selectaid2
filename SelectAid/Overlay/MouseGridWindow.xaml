@@ -1,0 +1,24 @@
+<Window x:Class="SelectAid.Overlay.MouseGridWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MouseGrid" WindowStyle="None" AllowsTransparency="True" Background="#22000000" Topmost="True"
+        WindowState="Maximized">
+    <Grid>
+        <UniformGrid Rows="3" Columns="3" x:Name="GridButtons">
+            <Button Content="1" Style="{StaticResource PrimaryButton}" Click="OnCell" />
+            <Button Content="2" Style="{StaticResource PrimaryButton}" Click="OnCell" />
+            <Button Content="3" Style="{StaticResource PrimaryButton}" Click="OnCell" />
+            <Button Content="4" Style="{StaticResource PrimaryButton}" Click="OnCell" />
+            <Button Content="5" Style="{StaticResource PrimaryButton}" Click="OnCell" />
+            <Button Content="6" Style="{StaticResource PrimaryButton}" Click="OnCell" />
+            <Button Content="7" Style="{StaticResource PrimaryButton}" Click="OnCell" />
+            <Button Content="8" Style="{StaticResource PrimaryButton}" Click="OnCell" />
+            <Button Content="9" Style="{StaticResource PrimaryButton}" Click="OnCell" />
+        </UniformGrid>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,24">
+            <Button Content="Left Click" Style="{StaticResource SecondaryButton}" Click="OnLeft" Margin="6" />
+            <Button Content="Right Click" Style="{StaticResource SecondaryButton}" Click="OnRight" Margin="6" />
+            <Button Content="Close" Style="{StaticResource SecondaryButton}" Click="OnClose" Margin="6" />
+        </StackPanel>
+    </Grid>
+</Window>

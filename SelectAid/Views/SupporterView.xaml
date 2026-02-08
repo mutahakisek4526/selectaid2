@@ -1,0 +1,33 @@
+<UserControl x:Class="SelectAid.Views.SupporterView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:models="clr-namespace:SelectAid.Models">
+    <StackPanel Margin="24">
+        <TextBlock Text="Supporter" FontSize="28" />
+        <TextBlock Text="Profile" FontSize="24" Margin="0,12,0,0" />
+        <ComboBox ItemsSource="{Binding Profiles}" SelectedItem="{Binding CurrentProfile}" DisplayMemberPath="Name" FontSize="24" Height="60" />
+        <TextBlock Text="Input Mode" FontSize="24" Margin="0,12,0,0" />
+        <ComboBox SelectedItem="{Binding InputMode}" FontSize="24" Height="60">
+            <ComboBox.ItemsSource>
+                <x:Array Type="models:InputMode">
+                    <models:InputMode>EyeOnly</models:InputMode>
+                    <models:InputMode>EyeSwitch</models:InputMode>
+                    <models:InputMode>EyeGyro</models:InputMode>
+                    <models:InputMode>GyroOnly</models:InputMode>
+                    <models:InputMode>SwitchScan</models:InputMode>
+                </x:Array>
+            </ComboBox.ItemsSource>
+        </ComboBox>
+        <TextBlock Text="Theme" FontSize="24" Margin="0,12,0,0" />
+        <ComboBox SelectedItem="{Binding ThemeId}" FontSize="24" Height="60">
+            <ComboBox.ItemsSource>
+                <x:Array Type="sys:String" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+                    <sys:String>Friendly</sys:String>
+                    <sys:String>Stylish</sys:String>
+                    <sys:String>Kids</sys:String>
+                </x:Array>
+            </ComboBox.ItemsSource>
+        </ComboBox>
+        <CheckBox Content="Auto Start" IsChecked="{Binding AutoStartEnabled}" FontSize="24" Margin="0,12,0,0" />
+    </StackPanel>
+</UserControl>
